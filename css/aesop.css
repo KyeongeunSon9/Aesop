@@ -39,21 +39,43 @@ header {
 .nav-area {
     height: 80px;
     background-color: var(--header-nav-background-color);
+}
+
+.nav-wrapper {
+    height: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .nav-left-container {
-    width: 600px;
+    width: 800px;
 }
 
 .nav-menu {
-    
-}
-
-.nav-left-container a {
-    color: var(--font-white-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+.nav-left-container a {
+    color: var(--font-white-color);
+    font-size: 13px;
+}
+
+.nav-right-container {
+    width: 110px;
+}
+
+.nav-right-container ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-right-container button {
+    font-size: 5px;
+}
+
