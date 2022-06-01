@@ -5,3 +5,55 @@
     --font-white-color: #fffef2;
     --font-black-color: #333;
 }
+
+header {
+    width: 100%;
+    height: 1000px;
+}
+
+.shipping-banner-area {
+    height: 40px;
+    background-color: var(--shipping-banner-background-color);
+}
+
+.shipping-banner {
+    width: 340px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.banner-text {
+    color: var(--font-white-color);
+    font-size: 13px;
+}
+
+.shipping-banner figure {
+    width: 24px;
+    fill: var(--font-white-color);
+    margin-top: 5px;
+}
+
+.nav-area {
+    height: 80px;
+    background-color: var(--header-nav-background-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-left-container {
+    width: 600px;
+}
+
+.nav-menu {
+    
+}
+
+.nav-left-container a {
+    color: var(--font-white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
