@@ -76,6 +76,22 @@ header {
     fill: var(--font-white-color);
 }
 
+.nav-left-container-mobile {
+    display: none;
+}
+
+.nav-menu-mobile {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-left-container-mobile a {
+    font-size: 14px;
+    color: var(--font-white-color);
+    
+}
+
 .nav-right-container {
     width: 105px;
 }
@@ -152,21 +168,37 @@ header {
     width: 300px;
     height: 60px;
     border: 1px solid var(--font-white-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-.aromas-link {
+.aromas-link-box a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
     font-size: 15px;
     color: var(--font-white-color);
     margin: 0 auto;
+    transition: 0.4s;
 }
 
 .aromas-link figure {
-    display: inline;
     fill: var(--font-white-color);
     margin-left: 180px;
+}
+
+.aromas-link-box:hover > a {
+    color: var(--font-black-color);
+}
+.aromas-link-box:hover > .aromas-link > figure {
+    fill: var(--font-black-color);
+}
+
+.aromas-link-box a:hover, .aromas-link-box a:focus {
+    border-color: var(--font-white-color);
+    background-color: var(--font-white-color);
 }
 
 /* 상품 슬라이드 첫번째 */
@@ -220,7 +252,7 @@ header {
     top: 40%;
 }
 
-.side-button-box figure {
+.arrow {
     transform: rotate(-90deg);
     fill: var(--font-white-color);
 }
@@ -290,28 +322,33 @@ header {
     width: 300px;
     height: 60px;
     border: 1px solid var(--discover-box-border-color);
-    display: flex;
-    align-items: center;
 }
 
 .discover-box a {
-    width: 260px;
+    width: 100%;
+    height: 100%;
     font-size: 15px;
     color: var(--font-black-color);
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
     margin: 0 auto;
+    padding: 20px;
 }
 
 .discover-box figure {
     opacity: 70%;
 }
 
-.discover-box:hover {
-    border-color: var(--font-black-color);
-    background-color: var(--font-black-color);
+.discover-box:hover > a {
     color: var(--font-white-color);
     fill: var(--font-white-color);
+}
+
+.discover-box a:hover, .discover-box a:focus {
+    border-color: var(--font-black-color);
+    background-color: var(--font-black-color);
 }
 
 .live-img video {
@@ -630,4 +667,23 @@ footer {
 .copyright {
     font-size: 18px;
     color: var(--font-white-color);
+}
+
+@media screen and (max-width:1024px) {
+    .nav-left-container {
+        display: none;
+    }
+    .nav-left-container-mobile {
+        display: flex;
+    }
+    #main-title {
+        background-image: url(../img/Aesop_Fragrance_2022_Web_Homepage_Primary_Full_Bleed_Tablet_1536x1230px.jpg);
+    }
+    .product-slide-wrapper .product:nth-child(3) {
+        display: none;
+    }
+    .product-slide-wrapper .product:nth-child(4) {
+        display: none;
+    }
+    
 }
