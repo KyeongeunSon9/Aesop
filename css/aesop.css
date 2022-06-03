@@ -219,9 +219,9 @@ header {
     margin: 0 auto;
 }
 
-.product figure {
-    max-width: 95%;
-    min-width: 70%;
+.product figure img {
+    width: auto;
+    height: 400px;
 }
 
 .product > * {
@@ -335,6 +335,7 @@ header {
     box-sizing: border-box;
     margin: 0 auto;
     padding: 20px;
+    transition: 0.4s;
 }
 
 .discover-box figure {
